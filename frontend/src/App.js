@@ -1,11 +1,14 @@
 import React from 'react';
 
+// import styles file
 import './global.css';
-import Logon from './pages/Logon';
+
+// importing routes file
+import Routes from './routes';
 
 function App() {
   return (
-    <Logon />
+    <Routes />
   );
 }
 
