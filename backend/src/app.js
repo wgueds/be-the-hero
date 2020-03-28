@@ -24,4 +24,6 @@ app.get('/', (request, response) => {
 */
 
 // porta para acesso
-app.listen(3333);
+// app.listen(3333); -> change to server.js
+
+module.exports = app;

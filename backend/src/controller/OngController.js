@@ -1,4 +1,7 @@
-const crypto = require('crypto');
+//const crypto = require('crypto');
+
+// import function to generate unique id
+const generateUniqueId = require('../utils/generateUnique');
 
 // importando conexao do banco de dados
 const connection = require('../database/connection');
@@ -9,11 +12,13 @@ module.exports = {
     
         return response.json(ongs);
     },
+    
     async create(request, response) {
         const {name, email, whatsapp, city, uf} = request.body;
 
         // gerando ID
-        const id = crypto.randomBytes(4).toString('HEX');
+        //const id = crypto.randomBytes(4).toString('HEX');
+        const id = generateUniqueId();
 
         await connection('ongs').insert({
             id,
