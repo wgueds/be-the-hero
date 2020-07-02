@@ -2,7 +2,7 @@
 Projeto criado na OmniStack 11.0
 
 <div align="center">
-  <img src=".github/logo.svg">
+  <img src="https://github.com/wgueds/be-the-hero/blob/master/frontend/src/assets/logo.svg">
   <p>Apoie ONGs, apoie as boas causas, <strong>be a hero!</strong><p>
 </div>
 
